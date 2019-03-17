@@ -19,10 +19,10 @@
           <div @click="toExperience('4')" :style="{'color':active=='4'?'#fff':'#a4a4a4'}">VR体验</div>
         </el-col>
         <el-col :sm="2" >
-          <div @click="toExperience('4')" :style="{'color':active=='4'?'#fff':'#a4a4a4'}">工程案例</div>
+          <div @click="toCase('7')" :style="{'color':active=='4'?'#fff':'#a4a4a4'}">工程案例</div>
         </el-col>
         <el-col :sm="2" >
-          <div @click="toExperience('4')" :style="{'color':active=='4'?'#fff':'#a4a4a4'}">新闻资讯</div>
+          <div @click="toNews('8')" :style="{'color':active=='4'?'#fff':'#a4a4a4'}">新闻资讯</div>
         </el-col>
         <el-col :sm="2" >
           <div @click="toJoin('5')" :style="{'color':active=='5'?'#fff':'#a4a4a4'}">招商加盟</div>
@@ -80,6 +80,14 @@ export default {
     toJoin (num) {
       this.active = num
       this.$router.push('./join')
+    },
+    toCase (num) {
+      this.active = num
+      this.$router.push('./case')
+    },
+    toNews (num) {
+      this.active = num
+      this.$router.push('./news')
     }
   },
 }

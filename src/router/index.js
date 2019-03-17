@@ -39,6 +39,16 @@ export default new Router({
       path: '/experience',
       name: 'experience',
       component: () => import('@/pages/experience')
+    },
+    {
+      path: '/case',
+      name: 'case',
+      component: () => import('@/pages/case')
+    },
+    {
+      path: '/news',
+      name: 'news',
+      component: () => import('@/pages/news')
     }
   ]
 })
